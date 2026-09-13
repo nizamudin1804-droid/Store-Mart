@@ -69,24 +69,66 @@
                 <h3 style="margin-bottom: 15px; color: #008060; font-size: 20px;"><i class="fa-solid fa-paper-plane"></i> Send Us a Message</h3>
                 
                 <!-- Formspree action link (apni email id yahan lagani hogi baad mein) -->
-                <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
-                    <div style="margin-bottom: 15px;">
-                        <label for="name" style="font-weight: 600; display: block; margin-bottom: 5px; font-size: 14px;">Your Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Enter your full name" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; outline: none;">
-                    </div>
+               <form name="contact" method="POST" data-netlify="true" class="contact-form">
 
-                    <div style="margin-bottom: 15px;">
-                        <label for="phone" style="font-weight: 600; display: block; margin-bottom: 5px; font-size: 14px;">Phone / WhatsApp Number</label>
-                        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; outline: none;">
-                    </div>
+    <input type="hidden" name="form-name" value="contact">
 
-                    <div style="margin-bottom: 20px;">
-                        <label for="message" style="font-weight: 600; display: block; margin-bottom: 5px; font-size: 14px;">Your Message</label>
-                        <textarea id="message" name="message" rows="4" required placeholder="Write your message or inquiry here..." style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; resize: vertical;"></textarea>
-                    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="name"
+            style="font-weight: 600; display: block; margin-bottom: 5px; font-size: 14px;">
+            Your Name
+        </label>
 
-                    <button type="submit" class="add-to-cart-btn" style="border: none; cursor: pointer; font-size: 16px;">Send Message</button>
-                </form>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter your full name"
+            style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; outline: none;">
+    </div>
+
+
+    <div style="margin-bottom: 15px;">
+        <label for="phone"
+            style="font-weight: 600; display: block; margin-bottom: 5px; font-size: 14px;">
+            Phone / WhatsApp Number
+        </label>
+
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            placeholder="Enter your phone number"
+            style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; outline: none;">
+    </div>
+
+
+    <div style="margin-bottom: 20px;">
+        <label for="message"
+            style="font-weight: 600; display: block; margin-bottom: 5px; font-size: 14px;">
+            Your Message
+        </label>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            placeholder="Write your message or inquiry here..."
+            style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; resize: vertical;"></textarea>
+    </div>
+
+
+    <button
+        type="submit"
+        class="add-to-cart-btn"
+        style="border: none; cursor: pointer; font-size: 16px;">
+        Send Message
+    </button>
+
+</form>
             </div>
 
         </div>
