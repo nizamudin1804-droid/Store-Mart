@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sher Afzal General Store - Grocery Products</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Top Announcement & Contact Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <p>🎉 Welcome to Sher Afzal General Store - Fast Home Delivery!</p>
+            <div class="top-contact">
+                <a href="tel:03278277233"><i class="fa-solid fa-phone"></i> 0327-8277233</a>
+                <a href="https://wa.me/923278277233" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo"><!-- Logo Code -->
+            <a href="Grocery.html" class="logo-box" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                <div style="background: #004d3b; color: #ffaa00; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; font-weight: 700; font-size: 20px; border-radius: 8px;">SA</div>
+                <div style="font-size: 22px; font-weight: 700; color: #004d3b; line-height: 1.1;">
+                    Sher Afzal <span style="color: #ffaa00; display: block; font-size: 14px; font-weight: 500;">General Store</span>
+                </div>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Grocery.html" class="active">Grocery Categories</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <a href="https://wa.me/923278277233" target="_blank" class="nav-whatsapp-btn"><i class="fa-brands fa-whatsapp"></i> Chat</a>
+        </div>
+    </header>
+
+    <!-- Grocery Page Main Section -->
+    <section class="categories-page-section" id="grocery-items">
+        <h2>All Grocery Items & Categories</h2>
+        
+        <!-- Category Filter Buttons -->
+        <div class="category-tabs">
+            <button class="tab-btn active" onclick="filterCategory('all')">All Items (40+)</button>
+            <button class="tab-btn" onclick="filterCategory('flour')">Flour (Atta)</button>
+            <button class="tab-btn" onclick="filterCategory('sugar')">Sugar</button>
+            <button class="tab-btn" onclick="filterCategory('rice')">Rice Varieties</button>
+            <button class="tab-btn" onclick="filterCategory('daal')">Daal & Pulses</button>
+            <button class="tab-btn" onclick="filterCategory('ghee')">Ghee</button>
+            <button class="tab-btn" onclick="filterCategory('drinks')">Cold Drinks (Bottles)</button>
+            <button class="tab-btn" onclick="filterCategory('tea')">Tea</button>
+        </div>
+
+        <!-- Products Grid (40 Items based on your requirements) -->
+        <div class="product-grid" id="product-grid">
+
+            <div class="product-card" data-category="top">
+                <div class="image-box"><img src="assets/images/bonus.png" alt="Bonus item"></div>
+                <div class="product-info">
+                    <h3>Bonus pack</h3>
+                    <p class="price">Rs. 50/10</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Bonus%20pack" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+                <!--======    tea box     ====-->
+
+            <div class="product-card" data-category="tea">
+                <div class="image-box"><img src="assets/images/tapal.png" alt="Tapal Tea"></div>
+                <div class="product-info">
+                    <h3>Tapal Tea (200g)</h3>
+                    <p class="price">Rs. 400</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Tapal%20Tea%20(200g)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tea">
+                <div class="image-box"><img src="assets/images/family mixture.jpg" alt="Tapal Tea"></div>
+                <div class="product-info">
+                    <h3>Tapal Family Mixture (200g)</h3>
+                    <p class="price">Rs. 400</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Tapal%20Family%20Mixture%20(200g)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tea">
+                <div class="image-box"><img src="assets/images/tapal FM 170g.jpg" alt="Tapal Tea"></div>
+                <div class="product-info">
+                    <h3>Tapal Family Mixture (100g)</h3>
+                    <p class="price">Rs. 200</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Tapal%20Family%20Mixture%20(100g)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tea">
+                <div class="image-box"><img src="assets/images/tapal 170g.jpg" alt="Tapal Tea"></div>
+                <div class="product-info">
+                    <h3>Tapal Tea (100g)</h3>
+                    <p class="price">Rs. 200</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Tapal%20Tea%20(100g)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- === 1. FLOUR (ATTA) === -->
+            <div class="product-card" data-category="flour">
+                <span class="tag">Popular</span>
+                <div class="image-box"><img src="assets/images/meda aatta.jfif"></div>
+                <div class="product-info">
+                    <h3>Chaki Fresh Wheat Flour (1kg)</h3>
+                    <p class="price">Rs. 155</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Chaki%20Fresh%20Wheat%20Flour%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="flour">
+                <div class="image-box"><img src="assets/images/white flour.png.jfif" alt="White Wheat Flour"></div>
+                <div class="product-info">
+                    <h3>White Wheat Fine Flour (1kg)</h3>
+                    <p class="price">Rs. 160</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20White%20Wheat%20Fine%20Flour%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- === 2. SUGAR === -->
+            <div class="product-card" data-category="sugar">
+                <span class="tag sale">Best</span>
+                <div class="image-box"><img src="assets/images/suger.png.png" alt="Sugar"></div>
+                <div class="product-info">
+                    <h3>Pure White Sugar (1kg)</h3>
+                    <p class="price">Rs. 150</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Pure%20White%20Sugar%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+            <!-- === 3. RICE VARIETIES === -->
+            <div class="product-card" data-category="rice">
+                <span class="tag">Top</span>
+                <div class="image-box"><img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=500&q=80" alt="Basmati Rice"></div>
+                <div class="product-info">
+                    <h3>Super Kernel Basmati Rice (1kg)</h3>
+                    <p class="price">Rs. 300</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Super%20Kernel%20Basmati%20Rice%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="rice">
+                <div class="image-box"><img src="assets/images/tota rice.jfif"></div>
+                <div class="product-info">
+                    <h3>Basmati Rice Small Pieces (Tota - 1kg)</h3>
+                    <p class="price">Rs. 170</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Basmati%20Rice%20Small%20Pieces%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="rice">
+                <div class="image-box"><img src="assets/images/sella rice 2.jfif"></div>
+                <div class="product-info">
+                    <h3>Pure Basmati Rice (1kg)</h3>
+                    <p class="price">Rs. 330</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Pure%20Basmati%20Rice%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="rice">
+                <div class="image-box"><img src="assets/images/basmati rice.jfif"></div>
+                <div class="product-info">
+                    <h3>Biryani Special Rice (1kg)</h3>
+                    <p class="price">Rs. 320</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Biryani%20Special%20Rice%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="rice">
+                <span class="tag sale">Special</span>
+                <div class="image-box"><img src="assets/images/sella rice.jfif"></div>
+                <div class="product-info">
+                    <h3>Pure Biryani Rice Long Grain (1kg)</h3>
+                    <p class="price">Rs. 350</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Pure%20Biryani%20Rice%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="rice">
+                <div class="image-box"><img src="assets/images/mota rice.jfif"></div>
+                <div class="product-info">
+                    <h3>Mota Basmati Rice (1kg)</h3>
+                    <p class="price">Rs. 160</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Mota%20Basmati%20Rice%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- === 4. DAAL & PULSES (Dry Food replaced with Daal pictures as requested) === -->
+            <div class="product-card" data-category="daal">
+                <div class="image-box"><img src="assets/images/channa daal.png"></div>
+                <div class="product-info">
+                    <h3>Daal Chana (1kg)</h3>
+                    <p class="price">Rs. 320</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Daal%20Chana%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="daal">
+                <div class="image-box"><img src="assets/images/mong daal.png"></div>
+                <div class="product-info">
+                    <h3>Daal Moong Washed (1kg)</h3>
+                    <p class="price">Rs. 420</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Daal%20Moong%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="daal">
+                <div class="image-box"><img src="assets/images/mash daal.jfif"></div>
+                <div class="product-info">
+                    <h3>Daal Maash Special Clean (1kg)</h3>
+                    <p class="price">Rs. 500</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Daal%20Maash%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="daal">
+                <div class="image-box"><img src="assets/images/masoor daal.png"></div>
+                <div class="product-info">
+                    <h3>Red Daal Masoor (1kg)</h3>
+                    <p class="price">Rs. 280</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Daal%20Masoor%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="daal">
+                <div class="image-box"><img src="assets/images/black daal.jfif"></div>
+                <div class="product-info">
+                    <h3>Black Daal (1kg)</h3>
+                    <p class="price">Rs. 280</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Black%20Daal%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- === 5. GHEE (BRAND TAZA SIZES) === -->
+            <div class="product-card" data-category="ghee">
+                <span class="tag">Brand</span>
+                <div class="image-box"><img src="assets/images/ghee 1kg.jpg" alt="Taza Ghee 1kg"></div>
+                <div class="product-info">
+                    <h3>Taza Cooking Ghee (1kg)</h3>
+                    <p class="price">Rs. 500</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Taza%20Ghee%20(1kg)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="ghee">
+                <div class="image-box"><img src="assets/images/ghee 500g.png" alt="Taza Ghee 500g"></div>
+                <div class="product-info">
+                    <h3>Ahla Cooking Ghee (500g)</h3>
+                    <p class="price">Rs. 240</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Ahla%20Ghee%20(500g)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="ghee">
+                <div class="image-box"><img src="assets/images/ghee 250g.png" alt="Taza Ghee 250g"></div>
+                <div class="product-info">
+                    <h3>Ahla Cooking Ghee (250g)</h3>
+                    <p class="price">Rs. 110</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Ahla%20Ghee%20(250g)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="ghee">
+                <div class="image-box"><img src="assets/images/areesa oil.png.jfif" alt="Areesa Cooking Oil 900gm"></div>
+                <div class="product-info">
+                    <h3>Areesa Cooking Oil (900gm)</h3>
+                    <p class="price">Rs. 480</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Areesa%20Cooking%20Oil%20(900gm)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- === 6. COLD DRINKS (BOTTLES ONLY - NO CANS, ALL SIZES: Jumbo, 1.5L, 1L, 500ml, 300ml, 250ml) === -->
+            <div class="product-card" data-category="drinks">
+                <span class="tag">Cold</span>
+                <div class="image-box"><img src="assets/images/coke 2.5litter.png" alt="Coke Jumbo"></div>
+                <div class="product-info">
+                    <h3>Coca-Cola Jumbo Bottle (2.25 Litre)</h3>
+                    <p class="price">Rs. 270</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Coca-Cola%20Jumbo%20(2.25L)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/coke 1.5litter.png" alt="Pepsi 1.5L"></div>
+                <div class="product-info">
+                    <h3>Pepsi Cold Drink (1.5 Litre)</h3>
+                    <p class="price">Rs. 220</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Pepsi%20(1.5L)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/sprite 1.5litter.png" alt="Sprite 1.5L"></div>
+                <div class="product-info">
+                    <h3>Sprite Bottle (1.5 Litre)</h3>
+                    <p class="price">Rs. 220</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Sprite%20(1.5L)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/fanta 1.5litter.png" alt="Fanta 1.5L"></div>
+                <div class="product-info">
+                    <h3>Fanta Orange Bottle (1.5 Litre)</h3>
+                    <p class="price">Rs. 220</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Fanta%20(1.5L)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/coke 1litter.png" alt="Coke 1 Litre"></div>
+                <div class="product-info">
+                    <h3>Coca-Cola Bottle (1 Litre)</h3>
+                    <p class="price">Rs. 170</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Coca-Cola%20(1%20Litre)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/coke 500ml.png" alt="Coke 500ml"></div>
+                <div class="product-info">
+                    <h3>Coca-Cola Small Bottle (500ml)</h3>
+                    <p class="price">Rs. 130</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Coca-Cola%20(500ml)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/sprite 500ml.png" alt="Sprite 500ml"></div>
+                <div class="product-info">
+                    <h3>Sprite Small Bottle (500ml)</h3>
+                    <p class="price">Rs. 130</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Sprite%20(500ml)" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/fanta 500ml.png" alt="Fanta 500ml"></div>
+                <div class="product-info">
+                    <h3>Fanta Small Bottle (500ml)</h3>
+                    <p class="price">Rs. 130</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Fanta%20500ml" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/fanta 2.5litter.png" alt="Fanta 2.5L"></div>
+                <div class="product-info">
+                    <h3>Fanta Bottle (2.5Litter)</h3>
+                    <p class="price">Rs. 270</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Fanta%202.5Litter" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/fanta 1litter.png" alt="Fanta 1L"></div>
+                <div class="product-info">
+                    <h3>Fanta Bottle (1Litter)</h3>
+                    <p class="price">Rs. 170</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Fanta%201Litter" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/sprite 2.5Litter.png" alt="Sprite 2.5L"></div>
+                <div class="product-info">
+                    <h3>Sprite Bottle (2.5Litter)</h3>
+                    <p class="price">Rs. 270</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Sprite%202.5Litter" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/coke 250ml.png" alt="Coke 250ml"></div>
+                <div class="product-info">
+                    <h3>Coca-Cola Mini Bottle (250ml)</h3>
+                    <p class="price">Rs. 75</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Coca-Cola%20250ml" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/fanta 250ml.png" alt="Fanta 250ml"></div>
+                <div class="product-info">
+                    <h3>Fanta Mini Bottle (250ml)</h3>
+                    <p class="price">Rs. 75</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Fanta%20250ml" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/sprite 1Litter.png" alt="Sprite 1Litter"></div>
+                <div class="product-info">
+                    <h3>Sprite Bottle (1Litter)</h3>
+                    <p class="price">Rs. 170</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Sprite%201Litter" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/sprite 250ml.png" alt="Sprite 250ml"></div>
+                <div class="product-info">
+                    <h3>Sprite Mini Bottle (250ml)</h3>
+                    <p class="price">Rs. 75</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Sprite%20250ml" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/sting 500ml.png" alt="Sting 500ml"></div>
+                <div class="product-info">
+                    <h3>Sting Energy Drink (500ml)</h3>
+                    <p class="price">Rs. 140</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Sting%20500ml" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="drinks">
+                <div class="image-box"><img src="assets/images/sting 300ml.png" alt="Sting 300ml"></div>
+                <div class="product-info">
+                    <h3>Sting Energy Drink (300ml)</h3>
+                    <p class="price">Rs. 100</p>
+                    <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20Sting%20300ml" target="_blank" class="add-to-cart-btn">Order on WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-card-box">
+            <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> <a href="tel:03278277233">0327-8277233</a></p>
+            <p><i class="fa-brands fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/923278277233" target="_blank">0327-8277233</a></p>
+            <p><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Kiker Maidan Sher Afzal Store Banars, Pakistan</p>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923278277233?text=Hello%2C%20I%20want%20to%20inquire%20about%20grocery%20items." class="floating-whatsapp" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Single Line Compact Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Al Ameer General Store. All copyrights reserved.</p>
+    </footer>
+
+    <script src="assets/js/theme.js"></script>
+</body>
+</html>

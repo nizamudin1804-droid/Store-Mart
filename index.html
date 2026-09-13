@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sher Afzal General Store - Categories & Products</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Top Announcement & Contact Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <p>🎉  Home Delivery charges apply</p>
+            <div class="top-contact">
+                <a href="tel:03278277233"><i class="fa-solid fa-phone"></i> 0327-8277233</a>
+                <a href="https://wa.me/923278277233" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+            </div>
+        </div>
+    </div>
+
+   <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo"><!-- Logo Code -->
+            <a href="Grocery.html" class="logo-box" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                <div style="background: #004d3b; color: #ffaa00; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; font-weight: 700; font-size: 20px; border-radius: 8px;">SA</div>
+                <div style="font-size: 22px; font-weight: 700; color: #004d3b; line-height: 1.1;">
+                    Sher Afzal <span style="color: #ffaa00; display: block; font-size: 14px; font-weight: 500;">General Store</span>
+                </div>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="Grocery.html">Grocery Categories</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <a href="https://wa.me/923278277233" target="_blank" class="nav-whatsapp-btn"><i class="fa-brands fa-whatsapp"></i> Chat</a>
+        </div>
+    </header>
+
+    <!-- Banner Slider Section -->
+    <section class="slider-section" id="home">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('assets/images/banner\ 1.jpg')">
+                <div class="slide-content">
+                    <h1>Explore All Grocery Categories</h1>
+                    <p>Find your favorite brands, rice varieties, cold drinks, and daily essentials.</p>
+                    <a href="Grocery.html" class="btn">View Categories</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('assets/images/banner\ 2.avif')">
+                <div class="slide-content">
+                    <h1>Quality Rice & Grains</h1>
+                    <p>Multiple varieties of Basmati Rice, Brown Rice, and Super Kernel available.</p>
+                    <a href="Grocery.html" class="btn">Shop Rice</a>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn" onclick="moveSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next-btn" onclick="moveSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+    </section>
+
+    <!-- =========================
+     FEATURED PRODUCTS
+========================= -->
+
+<section class="products-section">
+
+    <div class="section-heading">
+        <p class="section-kicker">Fresh picks from Store Mart</p>
+        <h2>Shop Our Popular Products</h2>
+        <p class="section-intro">Quality grocery essentials delivered to your doorstep.</p>
+    </div>
+
+    <div class="product-grid">
+
+        <!-- PRODUCT 1 -->
+        <div class="product-card">
+
+            <span class="tag">Top</span>
+
+            <div class="image-box">
+                <img
+                    src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=500&q=80"
+                    alt="Super Kernel Basmati Rice">
+            </div>
+
+            <div class="product-info">
+                <h3>Super Kernel Basmati Rice (1kg)</h3>
+
+                <p class="price">Rs. 170</p>
+
+                <a
+                    href="https://wa.me/923278277233?text=I%20want%20to%20order%20Super%20Kernel%20Basmati%20Rice"
+                    target="_blank"
+                    class="add-to-cart-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+        <div class="product-card">
+
+            <span class="tag">Hot</span>
+
+            <div class="image-box">
+                <img
+                    src="assets/images/coke 1.5litter.png"
+                    alt="Pepsi Cold Drink">
+            </div>
+
+            <div class="product-info">
+                <h3>Pepsi Cold Drink (1.5 Litre)</h3>
+
+                <p class="price">Rs. 220</p>
+
+                <a
+                    href="https://wa.me/923278277233?text=I%20want%20to%20order%20Pepsi%201.5L"
+                    target="_blank"
+                    class="add-to-cart-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+        <div class="product-card">
+
+            <span class="tag sale">Sale</span>
+
+            <div class="image-box">
+                <img
+                    src="assets/images/meda aatta.jfif"
+                    alt="Wheat Flour">
+            </div>
+
+            <div class="product-info">
+                <h3>Chaki Fresh Wheat Flour (1kg)</h3>
+
+                <p class="price">Rs. 160</p>
+
+                <a
+                    href="https://wa.me/923278277233?text=I%20want%20to%20order%20Wheat%20Flour"
+                    target="_blank"
+                    class="add-to-cart-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+        <div class="product-card">
+
+            <div class="image-box">
+                <img
+                    src="assets/images/ghee 1kg.jpg"
+                    alt="Taza Ghee">
+            </div>
+
+            <div class="product-info">
+                <h3>Taza Ghee (1kg)</h3>
+
+                <p class="price">Rs. 500</p>
+
+                <a
+                    href="https://wa.me/923278277233?text=I%20want%20to%20order%20Taza%20Ghee"
+                    target="_blank"
+                    class="add-to-cart-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 5 -->
+        <div class="product-card">
+
+            <div class="image-box">
+                <img
+                    src="assets/images/mong daal.png"
+                    alt="Daal Moong">
+            </div>
+
+            <div class="product-info">
+                <h3>Daal Moong (1kg)</h3>
+
+                <p class="price">Rs. 420</p>
+
+                <a
+                    href="https://wa.me/923278277233?text=I%20want%20to%20order%20Daal%20Moong"
+                    target="_blank"
+                    class="add-to-cart-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 6 -->
+        <div class="product-card">
+
+            <div class="image-box">
+                <img
+                    src="assets/images/suger.png.png"
+                    alt="White Sugar">
+            </div>
+
+            <div class="product-info">
+                <h3>Pure White Sugar (1kg)</h3>
+
+                <p class="price">Rs. 150</p>
+
+                <a
+                    href="https://wa.me/923278277233?text=I%20want%20to%20order%20White%20Sugar"
+                    target="_blank"
+                    class="add-to-cart-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- Special Deals Section -->
+    <section class="deals-section" id="deals">
+        <div class="deals-box">
+            <h2>Special Family Grocery Bundle!</h2>
+            <p>Get Super Kernel Rice, Sugar, Cooking Oil, and Daal Moong in one discounted combo pack.</p>
+            <a href="https://wa.me/923278277233?text=I%20want%20to%20order%20the%20Family%20Grocery%20Bundle" target="_blank" class="btn">Grab Deal on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-card-box">
+            <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> <a href="tel:03278277233">0327-8277233</a></p>
+            <p><i class="fa-brands fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/923278277233" target="_blank">0327-8277233</a></p>
+            <p><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Kiker Maidan Sher Afzal Store Banars, Pakistan</p>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923278277233?text=Hello%2C%20I%20want%20to%20inquire%20about%20your%20grocery%20items." class="floating-whatsapp" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Single Line Compact Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Al Ameer General Store. All copyrights reserved.</p>
+    </footer>
+    <script src="assets/js/theme.js"></script>
+</body>
+</html>

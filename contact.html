@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sher Afzal General Store</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="top-contact">
+                <span><i class="fa-solid fa-phone"></i> +92 327 8277233</span>
+                <span><i class="fa-solid fa-envelope"></i> nizamudin1804@gmail.com</span>
+            </div>
+            <div class="top-social">
+                <span>Welcome to Al-Ameer General Store</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo"><!-- Logo Code -->
+            <a href="Grocery.html" class="logo-box" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                <div style="background: #004d3b; color: #ffaa00; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; font-weight: 700; font-size: 20px; border-radius: 8px;">SA</div>
+                <div style="font-size: 22px; font-weight: 700; color: #004d3b; line-height: 1.1;">
+                    Sher Afzal <span style="color: #ffaa00; display: block; font-size: 14px; font-weight: 500;">General Store</span>
+                </div>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Grocery.html">Home</a></li>
+                <li><a href="Grocery.html">Grocery Categories</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="https://wa.me/923278277233?text=Hello%20Al-Ameer%20Store,%20I%20have%20an%20inquiry" target="_blank" class="nav-whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+    </header>
+
+    <!-- Contact Page Section -->
+    <section class="contact-section" id="contact">
+        <h2>Get in Touch With Us</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 30px; text-align: left;">
+            
+            <!-- Store Info Box -->
+            <div class="contact-card-box" style="height: 100%;">
+                <h3 style="margin-bottom: 15px; color: #008060; font-size: 20px;"><i class="fa-solid fa-store"></i> Store Information</h3>
+                <p style="margin-bottom: 12px;"><strong>Address:</strong> Kiker Maidan Sher Afzal Store Banars, Pakistan</p>
+                <p style="margin-bottom: 12px;"><strong>Phone / WhatsApp:</strong> +92 327 8277233</p>
+                <p style="margin-bottom: 12px;"><strong>Complain Number:</strong> +92 344 2499299</p>
+                <p style="margin-bottom: 12px;"><strong>Email:</strong> nizamudin1804@gmail.com</p>
+                <p style="margin-bottom: 0;"><strong>Timing:</strong> Monday to Sunday (7:00 AM - 11:00 PM)</p>
+            </div>
+
+            <!-- Contact Form Box -->
+            <div class="contact-card-box">
+                <h3 style="margin-bottom: 15px; color: #008060; font-size: 20px;"><i class="fa-solid fa-paper-plane"></i> Send Us a Message</h3>
+                
+                <!-- Formspree action link (apni email id yahan lagani hogi baad mein) -->
+                <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+                    <div style="margin-bottom: 15px;">
+                        <label for="name" style="font-weight: 600; display: block; margin-bottom: 5px; font-size: 14px;">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; outline: none;">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="phone" style="font-weight: 600; display: block; margin-bottom: 5px; font-size: 14px;">Phone / WhatsApp Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; outline: none;">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label for="message" style="font-weight: 600; display: block; margin-bottom: 5px; font-size: 14px;">Your Message</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Write your message or inquiry here..." style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; outline: none; resize: vertical;"></textarea>
+                    </div>
+
+                    <button type="submit" class="add-to-cart-btn" style="border: none; cursor: pointer; font-size: 16px;">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Icon -->
+    <a href="https://wa.me/923278277233?text=Hello%20Al-Ameer%20Store" class="floating-whatsapp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Al-Ameer General Store. All Rights Reserved.</p>
+    </footer>
+    <script src="assets/js/theme.js"></script>
+
+</body>
+</html>
